@@ -1,0 +1,129 @@
+.fun-btn {
+  border: 1px solid #333333;
+  border-radius: 3px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.fun-btn-sm {
+  padding: .25em .5em .25em .5em;
+}
+.fun-btn-lg {
+  padding: .5em 1em .5em 1em;
+}
+
+.fun-rainbow {
+  color: #ffffff;
+  animation-name: rainbow;
+  animation-duration:30s;
+  animation-direction:alternate;
+  animation-iteration-count:infinite;
+}
+.fun-rainbow:hover {
+  animation-name: rainbow;
+  animation-duration:1.5s;
+  animation-direction:alternate;
+  animation-iteration-count:infinite;
+}
+.fun-rainbow-border {
+  color: #ffffff;
+  animation-name: rainbow_border;
+  animation-duration:12s;
+  animation-direction:alternate;
+  animation-iteration-count:infinite;
+}
+.fun-swirl {
+  border: 1px solid;
+  animation-name: swirl;
+  animation-duration:.9s;
+  animation-direction:normal;
+  animation-iteration-count:infinite;
+}
+
+
+@keyframes rainbow {
+  0% {
+    background-color: #ff0000;
+    border-color: #ff0000;
+  }
+  16% {
+    background-color: #ffff00;
+    border-color: #ffff00;
+  }
+  32% {
+    background-color: #00ff00;
+    border-color: #00ff00;
+  }
+  48% {
+    background-color: #00ffff;
+    border-color: #00ffff;
+  }
+  64% {
+    background-color: #0000ff;
+    border-color: #0000ff;
+  }
+  80% {
+    background-color: #ff00ff;
+    border-color: #ff00ff;
+  }
+  100% {
+    background-color: #ff0000;
+    border-color: #ff0000;
+  }
+}
+@keyframes rainbow_border {
+  0% {
+    border-right-color: #ff0000;
+    color: #ff0000;
+  }
+  16% {
+    border-right-color: #ffff00;
+    color: #ffff00;
+  }
+  32% {
+    border-right-color: #00ff00;
+    color: #00ff00;
+  }
+  48% {
+    border-right-color: #00ffff;
+    color: #00ffff;
+  }
+  64% {
+    border-right-color: #0000ff;
+    color: #0000ff;
+  }
+  80% {
+    border-right-color: #ff00ff;
+    color: #ff00ff;
+  }
+  100% {
+    border-right-color: #ff0000;
+    color: #ff0000;
+  }
+}
+@keyframes swirl {
+  0% {
+    border-top-color: rgba(0,255,255,1);
+    border-right-color: rgba(0,0,0,0);
+    border-bottom-color: rgba(0,0,0,0);
+    border-left-color: rgba(0,0,0,0);
+
+  }
+  33.33333% {
+    border-top-color: rgba(0,0,0,0);
+    border-right-color: rgba(0,0,255,1);
+    border-bottom-color: rgba(0,0,0,0);
+    border-left-color: rgba(0,0,0,0);
+  }
+  66.66666% {
+    border-top-color: rgba(0,0,0,0);
+    border-right-color: rgba(0,0,0,0);
+    border-bottom-color: rgba(255,0,255,1);
+    border-left-color: rgba(0,0,0,0);
+  }
+  99.99999% {
+    border-top-color: rgba(0,0,0,0);
+    border-right-color: rgba(0,0,0,0);
+    border-bottom-color: rgba(0,0,0,0);
+    border-left-color: rgba(255,0,0,1);
+  }
+}
